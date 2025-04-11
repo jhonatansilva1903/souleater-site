@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Maka Albarn - Soul Eater</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .personagem-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 40px;
+      padding: 60px 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+    }
+
+    .descricao {
+      flex: 1;
+      color: #e0e0e0;
+    }
+
+    .descricao h1 {
+      font-size: 2.5rem;
+      color: #f39c12;
+      margin-bottom: 20px;
+    }
+
+    .descricao p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .imagem-personagem {
+      flex: 1;
+      text-align: center;
+    }
+
+    .imagem-personagem img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    }
+
+    @media (max-width: 768px) {
+      .personagem-container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .descricao h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Soul Eater</h1>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="#maka">Maka</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="personagem-container" id="maka">
+      <div class="descricao">
+        <h1>Maka Albarn</h1>
+        <p>
+          Maka Albarn é uma técnica da Shibusen determinada, inteligente e com um forte senso de justiça. 
+          Ao lado de sua foice demoníaca Soul, ela busca tornar sua arma uma Death Scythe digna do Shinigami. 
+          Apesar de seu jeito sério, ela tem um coração bondoso e é uma das personagens principais de Soul Eater.
+        </p>
+      </div>
+
+      <div class="imagem-personagem">
+        <img src="../images/maka.jpg" alt="Maka Albarn">
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Projeto feito por Jhonatan &copy; 2025</p>
+  </footer>
+
+</body>
+</html>
