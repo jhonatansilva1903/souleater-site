@@ -1,0 +1,129 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0b0b0b;
+    color: #f1f1f1;
+    line-height: 1.6;
+  }
+  
+  /* Cabeçalho */
+  header {
+    background-color: #141414;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #f39c12;
+  }
+  
+  header h1 {
+    color: #f39c12;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  nav ul li a {
+    color: #f1f1f1;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: #f39c12;
+  }
+  
+  /* Banner com imagem real */
+  .banner {
+    background-image: url('https://i.imgur.com/NXoRHlT.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    position: relative;
+  }
+  
+  .banner-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .banner-overlay h2 {
+    font-size: 2rem;
+    color: #fff;
+    max-width: 800px;
+  }
+  
+  /* Seções */
+  section {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    border-left: 5px solid #f39c12;
+    padding-left: 10px;
+  }
+  
+  section p,
+  section ul,
+  section ol {
+    font-size: 1rem;
+    color: #e0e0e0;
+  }
+  
+  ul li,
+  ol li {
+    margin-bottom: 10px;
+  }
+  
+  /* Rodapé */
+  footer {
+    background-color: #141414;
+    padding: 30px 20px;
+    text-align: center;
+    border-top: 2px solid #f39c12;
+    font-size: 0.9rem;
+    color: #999;
+  }
+  
+  footer p:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .banner-overlay h2 {
+      font-size: 1.5rem;
+    }
+  
+    section h2 {
+      font-size: 1.5rem;
+    }
+  }
+  
