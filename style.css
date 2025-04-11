@@ -47,12 +47,13 @@
   
   /* Banner com imagem real */
   .banner {
-    background-image: url('https://i.imgur.com/NXoRHlT.jpg');
+    position: relative;
+    height: 400px;
+    background-image: url("images/banner.jpg");
     background-size: cover;
     background-position: center;
-    height: 300px;
-    position: relative;
   }
+  
   
   .banner-overlay {
     background-color: rgba(0, 0, 0, 0.6);
